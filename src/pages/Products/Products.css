@@ -1,0 +1,39 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card {
+  width: 15rem;
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    /* background-color: cadetblue; */
+    border: 1px solid rgba(0, 0, 0, 0.078);
+    margin: 15px;
+    color: black;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card img {
+  height: 150px;
+    border-radius: 30px;
+   mix-blend-mode: multiply;
+}
+.card-body {
+  flex-grow: 1;
+  }
+.card:hover{
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0, 0, 0, 0.61);
+}
+.card-title {
+  font-size: 14px;
+  max-height: 3.6rem; /* Adjust the value to limit the number of lines */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}

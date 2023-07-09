@@ -1,0 +1,9 @@
+.home {
+       overflow-y: scroll;
+  }
+  .home::-webkit-scrollbar {
+    display: none;
+  }
+  .footer_Div{
+margin: 12px 12px 0px 12px !important
+  }
