@@ -20,7 +20,7 @@ const ProductPage = () => {
   const dispatch = Globalstate.dispatch;
 
   useEffect(() => {
-    fetchData();
+   fetchData();
   }, [])
 
 
@@ -32,7 +32,7 @@ const ProductPage = () => {
             <RotatingLines />
           </div>
         ) : (
-          data.map((item, index) => {
+          data.map((item) => {
             item.quantity = 1;
             return (
               <div key={item.id} className="col">
@@ -41,7 +41,7 @@ const ProductPage = () => {
                   <div className="card-body d-flex justify-content-center flex-column">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="card-text">{item.price}</p>
-                    <a onClick={() => dispatch({ type: "ADD", payload: item })} href="#" className="btn btn-primary mt-auto">
+                    <a onClick={() => dispatch({ type: "ADD", payload: item })} className="btn btn-primary mt-auto">
                       Add To Cart
                     </a>
                   </div>

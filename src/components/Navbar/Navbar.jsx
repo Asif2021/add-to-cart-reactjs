@@ -1,15 +1,20 @@
+import { useContext } from 'react'
+import { CartContext } from '../../Context/Context';
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
+  const Globalstate = useContext(CartContext);
+  const state = Globalstate.state;
+
   const [isOnProductPage, setisOnProductPage] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(()=>{
-    setisOnProductPage(location.pathname === "/products");
+    setisOnProductPage(location.pathname === "/products" || location.pathname  === "/cart");
   }, [location.pathname]);
 
   const handleClickProducts = () => {
@@ -42,7 +47,7 @@ const Navbar = () => {
                   <Link to={"/contact"} className="nav-link active" aria-current="page" href="#">Contact</Link>
                 </li>
               </ul>
-              {isOnProductPage ? <button onClick={ () => navigate('/cart') } className="btn btn-outline-light"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </button> : <button onClick={handleLogout} className="btn btn-outline-success">Logout</button>}
+              {isOnProductPage ? <button onClick={ () => navigate('/cart') } className="btn btn-outline-light"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>{state.length}</span> </button> : <button onClick={handleLogout} className="btn btn-outline-success">Logout</button>}
 
 
 

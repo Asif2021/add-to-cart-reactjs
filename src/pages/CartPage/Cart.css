@@ -4,40 +4,45 @@
     gap: 32px;
     padding: 128px;
   }
-  .cart .card {
+  .cart .cartData {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .cart .card img {
-    width: 40px;
-    height: 40px;
+  .cart .cartData img {
+    width: 50px;
+    height: 50px;
   }
-  .cart .card p {
+  .cart .cartData p {
     width: 200px;
+    font-weight: bold;
+
   }
-  .cart .card .quantity {
+  .cart .cartData .quantity {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    font-weight: bold;
   }
-  .cart .card .quantity p {
+  .cart .cartData .quantity p {
     width: 50px;
     text-align: center;
   }
-  .cart .card .quantity button {
+  .cart .cartData .quantity button {
     width: 50px;
   }
   .cart .total {
     text-align: right;
     border-top: 1px solid black;
   } 
+  .fa{
+    color: red;
+  }
+  .empty_cart{
+text-align: center;
+text-transform: uppercase;
+padding: 29px;
+border-radius: 40px;
+  }
 
 
-
-
-
-  /* <CartTable image={item.image}
-    title={item.title} 
-    qty={item.quantity}
-    price={item.quantity*item.price}/>*/

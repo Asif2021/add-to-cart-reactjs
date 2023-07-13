@@ -40,7 +40,7 @@ const handleLogin = (e) =>{
 
  <div className='mb-3'>
     <input type="checkbox"  className='custom-control custom-checkbox' id='check'/>
-    <label htmlFor="check" className='custom-input-label'>
+    <label htmlFor="check" className='custom-input-label ms-2'>
         Remember Me
     </label>
  </div>
