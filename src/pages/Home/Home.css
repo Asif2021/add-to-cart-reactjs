@@ -7,3 +7,10 @@
   .footer_Div{
 margin: 12px 12px 0px 12px !important
   }
+  .carousel-inner{
+    height: 370px;
+  }
+  .carousel-item, img{
+    height: 100%;
+    width:  100%;
+  }

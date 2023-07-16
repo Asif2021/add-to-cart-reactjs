@@ -14,10 +14,10 @@ const tempState = state.filter((item) => action.payload.id == item.id)
                     return [...state, action.payload];
                 } 
             case "INCREASE":
-const tempstate1 =state.map((item, index)=>{
+let tempstate1 =state.map((item, index)=>{
                 if(item.id === action.payload.id){
                      return  {...item, quantity: item.quantity + 1}
-                        } else {return item}}) 
+                        } else {return item}});
                 return tempstate1
 
             case "DECREASE":

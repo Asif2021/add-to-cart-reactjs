@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Cart from "./pages/CartPage/Cart";
 import Navbar from "./components/Navbar/Navbar";
 import Registration from "./pages/Registration/Registration";
@@ -13,17 +13,17 @@ import PageNotFound from "./pages/404/404";
 
 
 function App() {
+  const location = useLocation();
+  const shouldRenderNavbar = !["/register", "/login"].includes(location.pathname);
+
   return (
     <> 
       <div className="App">
-          <Routes>
+          {shouldRenderNavbar && <Navbar/>}
+            <Routes>  
             <Route path="/register" element={<Registration />} />
             <Route path="/login" element={<Login />} />
-
-            </Routes>
-            <>
-          <Navbar />
-            <Routes>  
+       
             {/* Protected Routes */}
             <Route path="/" element={<ProtectedRoutes/>}>
             <Route path="/" element={<Home/>} />
@@ -31,10 +31,8 @@ function App() {
             <Route path="/products" element={<ProductPage />}/>
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<PageNotFound/>}/>
-           
             </Route>
           </Routes>
-            </>
       </div>
     </>
   );

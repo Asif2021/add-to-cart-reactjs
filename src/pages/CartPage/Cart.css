@@ -35,10 +35,7 @@
     text-align: right;
     border-top: 1px solid black;
   } 
-  .fa{
-    color: red;
-  }
-  .empty_cart{
+   .empty_cart{
 text-align: center;
 text-transform: uppercase;
 padding: 29px;
