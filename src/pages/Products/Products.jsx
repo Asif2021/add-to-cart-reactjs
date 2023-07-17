@@ -14,7 +14,6 @@ const ProductPage = () => {
     const response = await axios.get("https://fakestoreapi.com/products");
     setData(response.data)
     setLoading(false);
-    console.log(data)
   }
   const Globalstate = useContext(CartContext);
   const dispatch = Globalstate.dispatch;
@@ -41,7 +40,7 @@ const ProductPage = () => {
                   <div className="card-body d-flex justify-content-center flex-column">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="card-text">{item.price}</p>
-                    <a onClick={() => dispatch({ type: "ADD", payload: item })} className="btn btn-primary mt-auto">
+                    <a onClick={() => dispatch({ type: "ADD", payload: item })} className="btn btn-dark mt-auto">
                       Add To Cart
                     </a>
                   </div>
