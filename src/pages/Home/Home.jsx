@@ -33,6 +33,29 @@ const Home = () => {
         </button>
       </div>
     </div>
+      <section className='m-5'>
+      <div className="container text-uppercase">
+        <h1>One Man Army</h1>
+
+  <div className="row">
+    <div className="col-sm">
+      <img className='home_image' src="/images/as.jpg" alt="image"  />
+      <h1>Party Time </h1>
+      <p>A person when he go out for party</p>
+    </div>
+    <div className="col-sm">
+    <img className='home_image' src="/images/a.jpg" alt="image"  />
+    <h1>Programer</h1>
+    <p>A person when he has to do programming </p>
+    </div>
+    <div className="col-sm">
+    <img className='home_image' src="/images/asi.jpg" alt="image"  />
+    <h1>With Friend</h1>
+    <p>A person when he go with friends </p>
+    </div>
+  </div>
+</div>
+      </section>
     <div className='footer_Div'>
     <Footer/>
     </div>
