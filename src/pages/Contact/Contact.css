@@ -15,19 +15,19 @@
     width: 100%;
 }
 .button{
-    /* background-color:#27ae60; */
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: transparent;
-    /* color: #27ae60; */
-    border: 1px solid red;
-    font-weight: bold;
+    /* background: transparent; */
+    color: white;
+    /* border: 1px solid red; */
+    /* font-weight: bold; */
     font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 20px;
+    border-radius: 5px;
 }
-/* .button:hover{
-    background-color: darkslategray;
-} */
+.button:hover{
+  background-color: white;
+    color: black;
+}
 @media screen and (max-width:1000px) {
     .contact-container{
       width: 45%;

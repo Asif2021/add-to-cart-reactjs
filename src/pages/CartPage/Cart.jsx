@@ -23,7 +23,7 @@ const Cart = () => {
         <p>{item.quantity*item.price}</p>
         <div className="quantity">
           
-          <button className='btn btn-outline-success fw-bolder' onClick={()=>{
+          <button className='btn btn-outline-dark fw-bolder' onClick={()=>{
             if(item.quantity > 1){
               dispatch({type:"DECREASE", payload:item})
             } else {
@@ -33,7 +33,7 @@ const Cart = () => {
 
           <p>{item.quantity}</p>
 
-          <button  className='btn btn-outline-success fw-bolder' onClick={() => dispatch({type:"INCREASE", payload:item})}>+</button>
+          <button  className='btn btn-outline-dark fw-bolder' onClick={() => dispatch({type:"INCREASE", payload:item})}>+</button>
         </div>
         <h2 onClick={()=>dispatch({type:"REMOVE", payload:item})}><i class="fa fa-trash " aria-hidden="true"></i></h2>
       </div>

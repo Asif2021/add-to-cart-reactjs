@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import { useFormik } from 'formik'
 import { loginSchemas } from './loginSchemas'
 
+
+//initialValues for formik
 const  initialValues = {
    email: "",
    password: ""
@@ -13,7 +15,7 @@ const Login = () => {
             // creating a veriable to from useNavigate hook 
    const navigate = useNavigate();
   
-
+// destructure values from Formik
    const {values, errors, touched, handleBlur, handleChange, handleSubmit} = useFormik({
          
             // getting email and password from user 
@@ -26,15 +28,20 @@ const Login = () => {
          onSubmit: (values) => {
             // getting data from localStorage 
                   const loggeduser = JSON.parse(localStorage.getItem("user"));
+                  console.log(loggeduser)
             // matching new data with localstorage data either it same or not 
    if(values.email === loggeduser.email 
       && values.password === loggeduser.password)
    {
+
             // setting localstorage to true that means user is loggedIn
       localStorage.setItem("loggedin", true);
 
             // navigating to home page 
          navigate("/");
+   } else { 
+    <p>login and password are not matched</p>
+
    }
 }
    })

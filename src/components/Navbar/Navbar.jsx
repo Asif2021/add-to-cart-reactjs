@@ -47,7 +47,7 @@ const Navbar = () => {
                   <Link to={"/contact"} className="nav-link active" aria-current="page" href="#">Contact</Link>
                 </li>
               </ul>
-              {isOnProductPage ? <button onClick={ () => navigate('/cart') } className="btn btn-outline-light"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>{state.length}</span> </button> : <button onClick={handleLogout} className="btn btn-outline-success">Logout</button>}
+              {isOnProductPage ? <button onClick={ () => navigate('/cart') } className="btn btn-outline-light"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>{state.length}</span> </button> : <button onClick={handleLogout} className="btn btn-outline-light">Logout</button>}
 
 
 

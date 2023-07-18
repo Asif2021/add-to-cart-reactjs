@@ -28,7 +28,7 @@ const ProductPage = () => {
      <div className="row">
         {loading ? (
           <div className="spinner">
-            <RotatingLines />
+            <RotatingLines strokeColor='gray' />
           </div>
         ) : (
           data.map((item) => {

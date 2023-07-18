@@ -12,7 +12,7 @@ const Footer = () => {
                         <section className="">
                             <p className="d-flex justify-content-center align-items-center">
                                 <span className="me-3"> Get Your Products here </span>
-                                <Link to={"/products"} type="button" className="btn btn-outline-success btn-rounded">
+                                <Link to={"/products"} type="button" className="btn btn-outline-light btn-rounded">
                                     Buy Now
                                 </Link>
                             </p>
@@ -20,29 +20,29 @@ const Footer = () => {
                         <hr className="mb-4" />
                         <section className="mb-4 text-center">
                             <a
-                                className="btn btn-outline-success btn-floating m-1"
+                                className="btn btn-outline-light btn-floating m-1"
                                 href="#!"
                                 role="button"
                             ><i className="fa fa-facebook-f"></i
                             ></a>
-                            <a className="btn btn-outline-success btn-floating m-1"
+                            <a className="btn btn-outline-light btn-floating m-1"
                                 href="#!"
                                 role="button"
                             ><i className="fa fa-twitter"></i></a>
 
-                            <a className="btn btn-outline-success btn-floating m-1" href="#!" role="button">
+                            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                                     <i className="fa fa-google">
                             </i></a>
 
                             <a
-                                className="btn btn-outline-success btn-floating m-1"
+                                className="btn btn-outline-light btn-floating m-1"
                                 href="#!"
                                 role="button"
                             ><i className="fa fa-instagram"></i
                             ></a>
 
                             <a
-                                className="btn btn-outline-success btn-floating m-1"
+                                className="btn btn-outline-light btn-floating m-1"
                                 href="#!"
                                 role="button"
                             ><i className="fa fa-github"></i
