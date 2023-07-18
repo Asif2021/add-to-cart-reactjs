@@ -16,7 +16,7 @@ const Contact = () => {
             <input type="text" name='name' className="form-control" id="exampleInputusername" aria-describedby="username" autoComplete='off' />
           </div>
           <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">Email address</label>
+            <label for="exampleInputEmail1" className="form-label">Email Address</label>
             <input type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autoComplete='off' />
           </div>
           <div class="mb-3">
