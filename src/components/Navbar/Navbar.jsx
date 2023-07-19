@@ -29,9 +29,9 @@ const Navbar = () => {
   return (
     <>
       <div className='container-fluid'>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3 text-uppercase fs-5">
           <div className="container-fluid">
-            <Link className="navbar-brand" href="#">Navbar</Link>
+            <Link className="navbar-brand text-uppercase" href="#">Meteorite</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -47,7 +47,7 @@ const Navbar = () => {
                   <Link to={"/contact"} className="nav-link active" aria-current="page" href="#">Contact</Link>
                 </li>
               </ul>
-              {isOnProductPage ? <button onClick={ () => navigate('/cart') } className="btn btn-outline-light"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>{state.length}</span> </button> : <button onClick={handleLogout} className="btn btn-outline-light">Logout</button>}
+              {isOnProductPage ? <button onClick={ () => navigate('/cart') } className="btn btn-outline-light"> <i class="fa fa-shopping-cart fs-5" aria-hidden="true"></i> <span>{state.length}</span> </button> : <button onClick={handleLogout} className="btn btn-outline-light fs-5 text-uppercase">Logout</button>}
 
 
 

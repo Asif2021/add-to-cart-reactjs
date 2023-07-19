@@ -33,27 +33,27 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <section className='m-5'>
-        <div className="container">
-          <h1 className='text-uppercase display-2 fw-bold m-5'>Team</h1>
+      <section>
+        <div className="container mb-5">
+          <h1 className='text-uppercase team_heading display-2 fw-bold m-5'>Team</h1>
 
           <div className="row">
             <div className="col-sm">
               <img className='home_image' src="/images/r.jpg" alt="image" />
               <h1 className='text-uppercase mt-5'>coo</h1>
-              <p>This Man is inspiration to us all. His hard work and dedication are truly admirable. He has exceeded all expectations with your performance</p>
+              <p>This man is inspiration to all. His hard work and dedication are truly admirable. He has exceeded all expectations with his performance</p>
             </div>
 
             <div className="col-sm">
               <img className='home_image' src="/images/as.jpg" alt="image" />
               <h1 className='text-uppercase mt-5'>Programer</h1>
-              <p>This man has a great ability to stay calm and composed. He has a great ability to take constructive criticism and has a great ability to stay positive and motivated. </p>
+              <p>This man has a great ability to stay calm and composed. He has a great ability to take constructive criticism. </p>
             </div>
 
             <div className="col-sm">
               <img className='home_image' src="/images/s.jpg" alt="image" />
               <h1 className='text-uppercase mt-5'>ceo</h1>
-              <p>This man has unique talent, and it’s a pleasure to witness it in action. He is a true problem-solver. He has a great work ethic and always go above and beyond. </p>
+              <p>This man has unique talent. He is a true problem-solver. He has a great work ethic and always go above and beyond. </p>
             </div>
 
           </div>

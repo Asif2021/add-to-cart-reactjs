@@ -13,6 +13,7 @@ const tempState = state.filter((item) => action.payload.id == item.id)
                 } else {
                     return [...state, action.payload];
                 } 
+
             case "INCREASE":
 let tempstate1 =state.map((item, index)=>{
                 if(item.id === action.payload.id){

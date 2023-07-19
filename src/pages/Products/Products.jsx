@@ -6,8 +6,9 @@ import { RotatingLines } from 'react-loader-spinner';
 
 
 const ProductPage = () => {
-   const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+
 
   const fetchData = async () => {
     setLoading(true);
@@ -24,7 +25,7 @@ const ProductPage = () => {
 
 
   return (
-    <div className="container">
+    <div className="container mt-5">
      <div className="row">
         {loading ? (
           <div className="spinner">
