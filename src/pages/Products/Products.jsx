@@ -5,6 +5,7 @@ import { CartContext } from '../../Context/Context';
 import { RotatingLines } from 'react-loader-spinner';
 
 
+
 const ProductPage = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -25,7 +26,7 @@ const ProductPage = () => {
 
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-2 mx-auto">
      <div className="row">
         {loading ? (
           <div className="spinner">
@@ -35,7 +36,7 @@ const ProductPage = () => {
           data.map((item) => {
             item.quantity = 1;
             return (
-              <div key={item.id} className="col">
+              <div key={item.id} className="col px-0">
                 <div className="card">
                   <img src={item.image} className="card-img-top" alt={item.title} />
                   <div className="card-body d-flex justify-content-center flex-column">
